@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="text2.css">
+    <title>Khashaba XO</title>
+</head>
+<body>
+    <div class="game">
+
+        <div class="title"><span>X O</span> game</div>
+        <div class="game2">
+
+        <div class="square" id="item1" onclick="game(this.id)"></div>
+        <div class="square" id="item2" onclick="game(this.id)"></div>
+        <div class="square" id="item3" onclick="game(this.id)"></div>
+
+        <div class="square" id="item4" onclick="game(this.id)"></div>
+        <div class="square" id="item5" onclick="game(this.id)"></div>
+        <div class="square" id="item6" onclick="game(this.id)"></div>
+
+        <div class="square" id="item7" onclick="game(this.id)"></div>
+        <div class="square" id="item8" onclick="game(this.id)"></div>
+        <div class="square" id="item9" onclick="game(this.id)"></div>
+        
+        </div>
+
+        
+    </div>
+    <div id="or">
+        <div id="h">
+            <h2 id="h2">تحب تبدأ بمين</h2>
+        </div>
+        <div id="btn2">
+            <button onclick="or(this.value)" value="x">x</button>
+            <button onclick="or(this.value)" value="o">o</button>
+        </div>
+    </div>
+    <div id="raw">
+        <div id="hraw"><h2 id="h2raw">تحب الجوله تبقى كام</h2></div>
+        <div id="inp1">
+            <input id="braw" placeholder="اكتب رقم الجوله" type="number">
+            <button onclick="raw()">تم</button>
+        </div>
+    </div>
+    <div id="val">
+            <div>
+                <div>X</div>
+                <div id="valx"></div>
+                <div>O</div>
+                <div id="valo"></div>
+            </div>
+    </div>
+    <script src="text2.js"></script>
+</body>
+</html>
+

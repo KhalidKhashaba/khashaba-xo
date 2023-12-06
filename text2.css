@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(16, 16, 46);
+    height: 80vh;
+    width: 100%;
+}
+.game{
+    width: 60%;
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    margin: 10vh auto ;
+    background-color: rgb(0, 53, 0);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px darkgreen;
+}
+.title{
+    background-color: rgba(40, 48, 70, 0.61);
+    padding: 5px 0;
+    margin: 5px 0;
+    font-size: x-large;
+    border-radius: 15px;
+}
+span{
+    color: #ffff00;
+}
+.game2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.square{
+    width: 98%;
+    height: 20vh;
+    background-color: #000a277e;
+    margin: 2px ;
+    font-size: 50px;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.square:hover{
+    background-color: rgb(0, 68, 7);
+    cursor: pointer;
+}
+#or{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(16, 16, 46, 0.753) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#h{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#h2{
+    font-size: xx-large;
+    font-weight: 700;
+    color:whitesmoke;
+
+}
+#btn2 button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: x-large;
+    font-weight: 700;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color:rgba(0, 155, 0, 0.493) ;
+    box-shadow: 0px 0px 8px 5px rgb(8, 110, 8);
+    transition: 1s;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+#btn2 button:hover{
+    transform: scale(1.5);
+}
+.z1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 155, 0, 0.493);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    animation-name: z1;
+    animation-duration: 1.5s;
+}
+@keyframes z1 {
+    0%   { opacity: 0; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+.z1 .x1{ 
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 36, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+.z1 .c1{
+    height: 50px;
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 36, 0);
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: 600;
+    box-shadow: 0px 0px 8px 5px rgb(0, 58, 0);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.z1 .c1:hover{
+    background-color:rgb(7, 138, 138) ;
+    font-size: xx-large;
+    height: 55px;
+}
+#raw{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(16, 16, 46);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+#hraw{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#inp1{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+#h2raw{
+    font-size: xx-large;
+    font-weight: 700;
+    color: whitesmoke;
+    margin: 20px auto;
+}
+#inp1 input{
+    width: 60%;
+    height: 35px;
+    margin: 0 5px;
+    background-color: rgb(0, 36, 0);
+    border: none; 
+    outline: none;
+    color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 5px rgb(0, 58, 0);
+}
+#inp1 button{
+    width: 30%;
+    height: 35px;
+    background-color: rgb(0, 36, 0);
+    border: none;
+    color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 5px rgb(0, 58, 0);
+}
+#inp1 input::placeholder{
+    color: rgba(167, 204, 167, 0.795);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#val{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(7, 7, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#val div{
+    width: 80%;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: auto auto ;
+    flex-wrap: nowrap;
+}
+#val div div{
+    width: 19%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+    margin: 5px 200px;
+    color: whitesmoke;
+    flex-wrap: nowrap;
+}
+@media (max-width:425px){
+    .game{
+        margin: 15vh auto;
+        width: 90%;
+        background:none ;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .square{
+        height: 100px;
+        
+    }
+    .z1 .c1{
+        font-size: medium;
+    }
+    .z1 .c1:hover{
+        font-size: large;
+    }
+    .z1 .x1{
+        font-size: large;
+    }
+    #btn2{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    #h2raw{
+        font-size:x-large;
+        font-weight: 700;
+        color: whitesmoke;
+        margin: 20px auto;
+    }
+    #val div div{
+        width: 19%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: 700;
+        margin: 5px 20px;
+        color: whitesmoke;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width:426px) and (max-width:950px){
+    .game{
+        margin: 15vh auto;
+        width: 60%;
+    }
+    .square{
+        height: 100px;
+    }
+    #val div div{
+        width: 19%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: 700;
+        margin: 5px 70px;
+        color: whitesmoke;
+        flex-wrap: nowrap;
+    }
+}
